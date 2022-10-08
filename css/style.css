@@ -1,0 +1,418 @@
+
+body {
+    font-family: 'anuratiregular', Arial, Helvetica, sans-serif;
+    max-width: 1920px;
+    min-width: 320px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'assassinregular';
+    src: url('../fonts/assassin-webfont.woff2') format('woff2'),
+         url('../fonts/assassin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aliceregular';
+    src: url('../fonts/alice-regular-webfont.woff2') format('woff2'),
+         url('../fonts/alice-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'lorabold';
+    src: url('../fonts/lora-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lora-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'loraregular';
+    src: url('../fonts/lora-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lora-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'the_gonjuringregular';
+    src: url('the_gonjuring-webfont.woff2') format('woff2'),
+         url('the_gonjuring-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'anuratiregular';
+    src: url('../fonts/anurati-regular-webfont.woff2') format('woff2'),
+         url('../fonts/anurati-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nebularegular';
+    src: url('../fonts/nebula-regular-webfont.woff2') format('woff2'),
+         url('../fonts/nebula-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+#home {
+    background-image: url(../images/space-galaxy-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+
+}
+
+#spotlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#spotlight > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spotlight > div > div {
+    text-align: center;
+}
+
+#spotlight > div > div p:nth-child(2) {
+    -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+}
+
+#spotlight > div > div > p:nth-child(1) {
+    -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+}
+
+#spotlight > div > div > p:nth-child(1), #spotlight > div > div > p:nth-child(2) {
+    font-size: 100px;
+    font-family: 'anuratiregular', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+#spotlight > div > div > h1 {
+    color: white;
+    font-family: 'nebularegular', Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+}
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: "nebularegular", Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+}
+
+.hero > .static-txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.hero .dynamic-txt {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txt > li {
+    list-style: none;
+    color: #16f37d;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txt li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 50px;
+}
+
+.dynamic-txt li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #16f37d;
+    animation: typing 3s steps(10) infinite;;
+}
+
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #spotlight > div > div > h1 {
+        color: white;
+        font-family: 'nebularegular', Arial, Helvetica, sans-serif;
+        font-size: 110px;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+}
+
+@media all and (max-width: 648px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        font-family: "nebularegular", Arial, Helvetica, sans-serif;
+        border-radius: 30px;
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+
+    #spotlight > div > div > h1 {
+        color: white;
+        font-family: 'nebularegular', Arial, Helvetica, sans-serif;
+        font-size: 100px;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    #spotlight > div > div > p:nth-child(1), #spotlight > div > div > p:nth-child(2) {
+        font-size: 80px;
+        font-family: 'anuratiregular', Arial, Helvetica, sans-serif;
+        color: white;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #spotlight > div > div > h1 {
+        color: white;
+        font-family: 'nebularegular', Arial, Helvetica, sans-serif;
+        font-size: 70px;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    #spotlight > div > div > p:nth-child(1), #spotlight > div > div > p:nth-child(2) {
+        font-size: 60px;
+        font-family: 'anuratiregular', Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .dynamic-txt > li {
+        list-style: none;
+        color: #16f37d;
+        font-size: 54px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #spotlight > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #spotlight > div > div > h1 {
+        color: white;
+        font-family: 'nebularegular', Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    #spotlight > div > div > p:nth-child(1), #spotlight > div > div > p:nth-child(2) {
+        font-size: 40px;
+        font-family: 'anuratiregular', Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .dynamic-txt > li {
+        list-style: none;
+        color: #16f37d;
+        font-size: 35px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+
+    .dynamic-txt li span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        border-left: 2px solid #16f37d;
+        animation: typing 3s steps(10) infinite;
+    }
+
+    .hero > .static-txt {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .dynamic-txt > li {
+        list-style: none;
+        color: #16f37d;
+        font-size: 30px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+}
